@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SentiLARE is a sentiment-aware pre-trained language model enhanced by linguistic knowledge. You can read our [paper](https://arxiv.org/abs/1911.02493) for more details. This project is a PyTorch implementation of our work.
+SentiLARE is a sentiment-aware pre-trained language model enhanced by linguistic knowledge. You can read our [paper](https://www.aclweb.org/anthology/2020.emnlp-main.567/) for more details. This project is a PyTorch implementation of our work.
 
 ## Dependencies
 
@@ -73,11 +73,15 @@ The pre-training codes will be released soon.
 ## Citation
 
 ```
-@inproceedings{ke2020sentilare,
-    title = "SentiLARE: Sentiment-Aware Language Representation Learning with Linguistic Knowledge",
-    author = "Ke, Pei and Ji, Haozhe and Liu, Siyang and Zhu, Xiaoyan and Huang, Minlie",
-    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing",
+@inproceedings{ke-etal-2020-sentilare,
+    title = "{S}enti{LARE}: Sentiment-Aware Language Representation Learning with Linguistic Knowledge",
+    author = "Ke, Pei  and Ji, Haozhe  and Liu, Siyang  and Zhu, Xiaoyan  and Huang, Minlie",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
     year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    pages = "6975--6988",
 }
 ```
 
