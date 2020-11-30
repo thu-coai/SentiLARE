@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SentiLARE is a sentiment-aware pre-trained language model enhanced by linguistic knowledge. You can read our [paper](https://arxiv.org/abs/1911.02493) for more details. This project is a PyTorch implementation of our work.
+SentiLARE is a sentiment-aware pre-trained language model enhanced by linguistic knowledge. You can read our [paper](https://www.aclweb.org/anthology/2020.emnlp-main.567/) for more details. This project is a PyTorch implementation of our work.
 
 ## Dependencies
 
@@ -19,18 +19,18 @@ SentiLARE is a sentiment-aware pre-trained language model enhanced by linguistic
 
 ### Datasets of Downstream Tasks
 
-Our experiments contain sentence-level sentiment classification (e.g. SST / MR / IMDB / Yelp-2 / Yelp-5) and aspect-level sentiment analysis (e.g. Lap14 / Res14 / Res16). You can download the [pre-processed datasets](https://cloud.tsinghua.edu.cn/d/f6baaff5c398463388b2/) of the downstream tasks. The detailed description of the data formats is attached to the datasets.
+Our experiments contain sentence-level sentiment classification (e.g. SST / MR / IMDB / Yelp-2 / Yelp-5) and aspect-level sentiment analysis (e.g. Lap14 / Res14 / Res16). You can download the pre-processed datasets ([Google Drive](https://drive.google.com/drive/folders/1v84riTNxCMJi3HWhJdDNyBryCtTTfNjy?usp=sharing) / [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/f6baaff5c398463388b2/)) of the downstream tasks. The detailed description of the data formats is attached to the datasets.
 
 ### Fine-tuning
 
-To quickly conduct the fine-tuning experiments, you can directly download the [checkpoint](https://cloud.tsinghua.edu.cn/d/f6baaff5c398463388b2/) of our pre-trained model. We show the example of fine-tuning SentiLARE on SST as follows:
+To quickly conduct the fine-tuning experiments, you can directly download the checkpoint ([Google Drive](https://drive.google.com/drive/folders/1v84riTNxCMJi3HWhJdDNyBryCtTTfNjy?usp=sharing) / [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/f6baaff5c398463388b2/)) of our pre-trained model. We show the example of fine-tuning SentiLARE on SST as follows:
 
 ```shell
 cd finetune
 CUDA_VISIBLE_DEVICES=0,1,2 python run_sent_sentilr_roberta.py \
           --data_dir data/sent/sst \
           --model_type roberta \
-          --model_name_or_path pretrain_model/senti-roberta-base-discrete \
+          --model_name_or_path pretrain_model/ \
           --task_name sst \
           --do_train \
           --do_eval \
@@ -73,11 +73,15 @@ The pre-training codes will be released soon.
 ## Citation
 
 ```
-@inproceedings{ke2020sentilare,
-    title = "SentiLARE: Sentiment-Aware Language Representation Learning with Linguistic Knowledge",
-    author = "Ke, Pei and Ji, Haozhe and Liu, Siyang and Zhu, Xiaoyan and Huang, Minlie",
-    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing",
+@inproceedings{ke-etal-2020-sentilare,
+    title = "{S}enti{LARE}: Sentiment-Aware Language Representation Learning with Linguistic Knowledge",
+    author = "Ke, Pei  and Ji, Haozhe  and Liu, Siyang  and Zhu, Xiaoyan  and Huang, Minlie",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
     year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    pages = "6975--6988",
 }
 ```
 
