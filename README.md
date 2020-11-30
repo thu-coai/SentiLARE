@@ -30,7 +30,7 @@ cd finetune
 CUDA_VISIBLE_DEVICES=0,1,2 python run_sent_sentilr_roberta.py \
           --data_dir data/sent/sst \
           --model_type roberta \
-          --model_name_or_path pretrain_model/senti-roberta-base-discrete \
+          --model_name_or_path pretrain_model/ \
           --task_name sst \
           --do_train \
           --do_eval \
