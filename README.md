@@ -48,7 +48,7 @@ CUDA_VISIBLE_DEVICES=0,1,2 python run_sent_sentilr_roberta.py \
 
 Note that `data_dir` is set to the directory of pre-processed SST dataset, and `model_name_or_path` is set to the directory of the pre-trained model checkpoint. `output_dir` is the directory to save the fine-tuning checkpoints. You can refer to the fine-tuning codes to get the description of other hyper-parameters.
 
-More details about fine-tuning SentiLARE on other datasets can be found in [`finetune/README.MD`]().
+More details about fine-tuning SentiLARE on other datasets can be found in [`finetune/README.MD`](https://github.com/thu-coai/SentiLARE/tree/master/finetune).
 
 ### POS Tagging and Polarity Acquisition for Downstream Tasks
 
