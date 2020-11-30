@@ -19,11 +19,11 @@ SentiLARE is a sentiment-aware pre-trained language model enhanced by linguistic
 
 ### Datasets of Downstream Tasks
 
-Our experiments contain sentence-level sentiment classification (e.g. SST / MR / IMDB / Yelp-2 / Yelp-5) and aspect-level sentiment analysis (e.g. Lap14 / Res14 / Res16). You can download the [pre-processed datasets](https://cloud.tsinghua.edu.cn/d/f6baaff5c398463388b2/) of the downstream tasks. The detailed description of the data formats is attached to the datasets.
+Our experiments contain sentence-level sentiment classification (e.g. SST / MR / IMDB / Yelp-2 / Yelp-5) and aspect-level sentiment analysis (e.g. Lap14 / Res14 / Res16). You can download the pre-processed datasets ([Google Drive](https://drive.google.com/drive/folders/1v84riTNxCMJi3HWhJdDNyBryCtTTfNjy?usp=sharing) / [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/f6baaff5c398463388b2/)) of the downstream tasks. The detailed description of the data formats is attached to the datasets.
 
 ### Fine-tuning
 
-To quickly conduct the fine-tuning experiments, you can directly download the [checkpoint](https://cloud.tsinghua.edu.cn/d/f6baaff5c398463388b2/) of our pre-trained model. We show the example of fine-tuning SentiLARE on SST as follows:
+To quickly conduct the fine-tuning experiments, you can directly download the checkpoint ([Google Drive](https://drive.google.com/drive/folders/1v84riTNxCMJi3HWhJdDNyBryCtTTfNjy?usp=sharing) / [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/f6baaff5c398463388b2/)) of our pre-trained model. We show the example of fine-tuning SentiLARE on SST as follows:
 
 ```shell
 cd finetune
