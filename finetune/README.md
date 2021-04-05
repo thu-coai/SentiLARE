@@ -2,7 +2,7 @@
 
 ## Preprocessing
 
-During fine-tuning, we need to first pre-process the raw datasets of downstream tasks, including POS tagging and word-level polarity acquisition. If you use the pre-processed datasets we provide, you can skip this step.
+During fine-tuning, we need to first pre-process the raw datasets of downstream tasks, including POS tagging and word-level polarity acquisition. Refer to [`preprocess/README.md`](https://github.com/thu-coai/SentiLARE/tree/master/preprocess) for more implementation details. If you use the pre-processed datasets we provide, you can skip this step.
 
 ## Fine-tuning
 
