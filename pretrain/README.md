@@ -2,7 +2,7 @@
 
 ## Input Files
 
-Similar to fine-tuning, we need to first pre-process the pre-training dataset to acquire the tokenized texts, POS tags, word-level sentiment polarities, and the review-level sentiment labels. Here, we give an example of input files. You can simply modify the pre-processing codes for fine-tuning to construct these files for pre-training.
+Similar to fine-tuning, we need to first pre-process the pre-training dataset to acquire the tokenized texts, POS tags, word-level sentiment polarities, and the review-level sentiment labels. Here, we give an example of input files. You can simply modify the [pre-processing codes](https://github.com/thu-coai/SentiLARE/tree/master/preprocess) for fine-tuning to construct these files for pre-training.
 
 1) Raw file
 
