@@ -52,7 +52,7 @@ More details about fine-tuning SentiLARE on other datasets can be found in [`fin
 
 ### POS Tagging and Polarity Acquisition for Downstream Tasks
 
-During pre-processing, we tokenize the original datasets with NLTK, tag the sentences with Stanford Log-Linear Part-of-Speech Tagger, and obtain the sentiment polarity with Sentence-BERT. We further release the original datasets and the pre-processing scripts (to be announced soon), so you can follow our pipeline to acquire linguistic knowledge for your own datasets.
+During pre-processing, we tokenize the original datasets with NLTK, tag the sentences with Stanford Log-Linear Part-of-Speech Tagger, and obtain the sentiment polarity with Sentence-BERT.
 
 ## Pre-training
 
@@ -64,11 +64,11 @@ We use Yelp Dataset Challenge 2019 as our pre-training dataset. According to the
 
 ### POS Tagging and Polarity Acquisition for Pre-training Dataset
 
-Similar to fine-tuning, we also conduct part-of-speech tagging and sentiment polarity acquisition on the pre-training dataset. The pre-processing scripts will be announced soon. Note that since the pre-training dataset is quite large, the pre-processing procedure may take a long time because we need to use Sentence-BERT to obtain the representation vectors of all the sentences in the pre-training dataset.
+Similar to fine-tuning, we also conduct part-of-speech tagging and sentiment polarity acquisition on the pre-training dataset. Note that since the pre-training dataset is quite large, the pre-processing procedure may take a long time because we need to use Sentence-BERT to obtain the representation vectors of all the sentences in the pre-training dataset.
 
 ### Pre-training
 
-The pre-training codes will be released soon.
+Refer to [`pretrain/README.MD`](https://github.com/thu-coai/SentiLARE/tree/master/pretrain) for more implementation details about pre-training.
 
 ## Citation
 
